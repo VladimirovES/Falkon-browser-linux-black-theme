@@ -13,7 +13,7 @@
 /*MainWindow*ЦВЕТ меняеТМ ТУТ*/
 #mainwindow
 {
-     background : #3f3f3f;
+     background : #474747;
 	border-top: 3px solid #3a3a3b;
 }
 
@@ -46,57 +46,57 @@
 }
 
 #navigation-button-back
-{background: #3f3f3f;;
+{background: #474747;;
     qproperty-themeIcon: "go-previous";
 }
 
 #navigation-button-next
-{background: #3f3f3f;
+{background: #474747;
     qproperty-themeIcon: "go-next";
 }
 
 #navigation-button-stop
-{background: #3f3f3f;
+{background: #474747;
     qproperty-themeIcon: "process-stop";
 }
 
 #navigation-button-reload
-{background: #3f3f3f;
+{background: #474747;
     qproperty-themeIcon: "view-refresh";
 }
 
 #navigation-button-home
-{background: #3f3f3f;
+{background: #474747;
     qproperty-themeIcon: "go-home";
 }
 
 #navigation-button-addtab
-{background: #3f3f3f;;
+{background: #474747;;
     qproperty-themeIcon: "list-add";
 }
 
 #navigation-button-tools
-{background: #3f3f3f;
+{background: #474747;
 	qproperty-fixedsize: 15px 15px;
     qproperty-themeIcon: "arrow-right-double";
     qproperty-fallbackIcon: url(images/tools.svg);
 }
 
 #navigation-button-exitfullscreen
-{background: #3f3f3f;;
+{background: #474747;;
     qproperty-themeIcon: "view-restore";
     qproperty-fallbackIcon: url(images/exit-fullscreen.svg);
 }
 
 #navigation-button-supermenu
-{background: #3f3f3f;
+{background: #474747;
     qproperty-themeIcon: "application-menu";
     qproperty-fallbackIcon: url(images/menu.svg);
 	qproperty-fixedsize: 15px 15px;
 }
 
 #navigation-toolbutton-badge
-{background: #3f3f3f;;
+{background: #474747;;
     background: palette(dark);
     color: palette(bright-text);
     margin: 0px 1px;
@@ -217,12 +217,16 @@ TabBarTabMetrics
 }
 
 #tabbar::tab:selected
-{font: bold 12px;
-    background : #3f3f3f;
-    border: 1px solid #525252;
-    border-bottom: none;
+{font: normal 12px;
+    background : #474747;
+   
+    border-bottom: 2px solid #474747;
 	 border-left: 1px solid #525252;
 	 border-right: 1px solid #525252;
+	
+	border-top: 1px solid #525252;
+	
+	
 }
 
 #tabbar::tab:!selected
@@ -236,7 +240,7 @@ TabBarTabMetrics
 
 #tabbar::tab:!selected:hover
 {	font: normal 12px;
-    background : #3f3f3f;
+    background : #474747;
     border: 1px solid #5B5B5B;
     border-bottom: none;
 	 border-left: none;
@@ -448,9 +452,9 @@ BrowsingLibrary #frame
 
 QFrame[js-frame="true"]
 {
-    border: 1px solid  black;
+    border: 1px solid  #474747;
     border-bottom: 0px;
-    background-color: black;
+    background-color: #474747;
 }
 
 QFrame[js-frame2="true"]
