@@ -235,9 +235,9 @@ TabBarTabMetrics
 }
 
 #tabbar::tab:!selected:hover
-{	font: bold 12px;
-    background: #5B5B5B;
-    border: 2px solid #5B5B5B;
+{	font: normal 12px;
+    background : #3f3f3f;
+    border: 1px solid #5B5B5B;
     border-bottom: none;
 	 border-left: none;
 	 border-right: none;
