@@ -1,4 +1,4 @@
-# Falkon-browser-linux-black-theme
+# Falkon-browser-linux-dark-theme
 
 ## Top button
-[![https://imgur.com/HjlRIsi.png](https://imgur.com/HjlRIsi.png)](https://imgur.com/HjlRIsi.png)
+[![https://imgur.com/p6w6Ere.png](https://imgur.com/p6w6Ere.png)](https://imgur.com/p6w6Ere.png)
