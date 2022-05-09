@@ -4,7 +4,7 @@ l/*************************************
  * Based on: Firefox Strata Aero     *
  *************************************/
 
-*[html-link-look="true"]
+*[html-link-look="false"]
 {
     color: palette(link);
     text-decoration: underline;
@@ -17,11 +17,48 @@ l/*************************************
 	border-top: 3px solid #3a3a3b;
 }
 
+QMenu {
+	background-color: #3a3a3b;
+	border-radius: 2px;
+	color: white;
+ }
+
+QMenu::item:selected {
+    background-color: #EE82EE;
+    color: black;
+}
+
+
+QListView {
+    
+	border-radius: 0px;
+    background: #424242; /*downloads background*/
+    alternate-background-color: #424242; /*downloads and pref extensions alt color*/
+    color: white; /*may take over qlabel*/
+    font: normal 12px;
+}
+
+QListView::item:selected {
+    border-radius: 5px;
+	border: 1px solid grey;
+	background: #363232;
+    color: white;
+}
+
+QListView::item:hover {
+	border-radius: 5px;
+	border: 1px solid grey;
+    background: #7e7d7f;
+	    color: white;
+}
+
+
 #statusbar-ip-label
 {
     padding-right: 1px;
 	
 }
+
 
 /*NavigationBar*/
 #navigationbar
@@ -206,19 +243,19 @@ TabBarTabMetrics
 }
 
 #tabbar::close-button
-{   qproperty-iconSize: 12px;
-    image: url(images/tab-close.svg);
+{   
+    image: url(images/tab-close.vg);
 	
 }
 
 #tabbar::close-button:hover
 {
-    image: url(images/tab-close-h.svg);
+    image: url(images/tab-close.svg);
 }
 
 #tabbar::close-button:pressed
 {
-    image: url(images/tab-close-a.svg);
+    image: url(images/tab-close-h.svg);
 }
 /*Настройки вкладок*/
 #tabbar::tab
@@ -305,8 +342,6 @@ IconProvider
 /*LocationBar*/
 #locationbar
 
-
-
 {
     background: #424242;
 	color: #FFFFFF;
@@ -388,20 +423,20 @@ IconProvider
 /*WebSearchBar*/
 #websearchbar
 {
-    background: #373737;
+    background: #3a3a3b;
 	color: #FFFFFF;
     border: 1px solid #5B5B5B solid;
     qproperty-leftMargin: 27;
 }
 
 #websearchbar-searchbutton
-{
+{background: #3a3a3b;
     qproperty-fixedsize: 22px 16px;
     qproperty-themeIcon: "edit-find";
 }
 
 #websearchbar-searchprovider-combobox
-{
+{	background: #3a3a3b;
     border-image: url(images/transp.png);
     qproperty-fixedwidth: 25;
     min-height: 25px;
@@ -479,9 +514,58 @@ QFrame[js-frame2="true"]
     background-color: #f3f3f3;
 }
 
+/*Scrollbar*/
+QScrollBar:vertical {
+    background: #424242;
+	border-radius: 5px;
+    width: 14px;
+    margin: 14px 0 14px 0;
+}
+QScrollBar::handle:vertical {
+  border-radius: 5px;
+    background: grey;
+    min-height: 15px;
+}
+QScrollBar::handle:vertical:pressed {
+    background: #aba4a4;
+    min-height: 15px;
+	border-radius: 5px;
+}
+QScrollBar::add-line:vertical {
+       background: #424242;
+    height: 12px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical {
+	    background: #424242;
+    height: 12px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+    width: 8px;
+    height: 8px;
+    background: #424242;
+}
+QScrollBar::up-arrow:vertical:hover, QScrollBar::down-arrow:vertical:hover{
+	width: 8px;
+    height: 8px;
+	background: #424242;
+}
+QScrollBar::up-arrow:vertical:pressed, QScrollBar::down-arrow:vertical:pressed {
+    width: 8px;
+    height: 8px;
+	background: #424242;
+}
 /*WebView*/
-WebView
-{
-    background: #3a3a3b;
+WebView {
+    background: #424242;
 }
 
+LocationCompleterView {
+	background-color: #787575;
+	border-radius: 5px;
+	border: 2px solid black;
+	color: white;
+}
