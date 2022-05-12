@@ -1,4 +1,4 @@
-l/*************************************
+ol/*************************************
  * Windows Theme                     *
  * Author: Evgeniy                    *
  * Based on: Firefox Strata Aero     *
@@ -19,7 +19,8 @@ l/*************************************
 
 QMenu {
 	background-color: #3a3a3b;
-	border-radius: 2px;
+	border-radius: 5px;
+	border: 1px solid black;
 	color: white;
  }
 
@@ -28,19 +29,24 @@ QMenu::item:selected {
     color: black;
 }
 
+LocationCompleterView {
+	background-color: #3a3a3b;
+	border-radius: 10px;
+		color: white;
+}
 
 QListView {
-    
-	border-radius: 0px;
-    background: #424242; /*downloads background*/
-    alternate-background-color: #424242; /*downloads and pref extensions alt color*/
+
+	border-radius: 5px;
+    background: #474747; /*downloads background*/
+    alternate-background-color: #474747; /*downloads and pref extensions alt color*/
     color: white; /*may take over qlabel*/
     font: normal 12px;
 }
 
 QListView::item:selected {
     border-radius: 5px;
-	border: 1px solid grey;
+	
 	background: #363232;
     color: white;
 }
@@ -85,39 +91,38 @@ QListView::item:hover {
 #navigation-button-back
 {background: #3a3a3b;
 	 margin-left: 158px;
-	qproperty-iconSize: 22px;
+	qproperty-iconSize: 20px;
     qproperty-themeIcon: "go-previous";
 }
 
 #navigation-button-next
 {background: #3a3a3b;
-	qproperty-iconSize: 22px;
+	qproperty-iconSize: 20px;
     qproperty-themeIcon: "go-next";
 }
 
 #navigation-button-stop
 {background: #3a3a3b;
-	qproperty-iconSize: 22px;
+	qproperty-iconSize: 20px;
     qproperty-themeIcon: "process-stop";
 }
 
 #navigation-button-reload
 {background: #3a3a3b;
-	qproperty-iconSize: 22px;
+	qproperty-iconSize: 20px;
     qproperty-themeIcon: "view-refresh";
 }
 
 #navigation-button-home
 {background: #3a3a3b;
-	qproperty-iconSize: 22px;
+	qproperty-iconSize: 20px;
     qproperty-themeIcon: "go-home";
 }
 
 #navigation-button-addtab
 {background: #3a3a3b;;
     qproperty-fixedsize: 15px 15px;
-    
-    qproperty-fallbackIcon: url(images/addp1.svg);
+       qproperty-fallbackIcon: url(images/addp1.svg);
 }
 
 #navigation-button-tools
@@ -172,7 +177,7 @@ ToolButton[button-id="button-downloads"]
 #tabwidget-button-opentabs
 { background: #3a3a3b;
     qproperty-themeIcon: "go-down";
-    qproperty-fixedsize: 22px 29px;
+    qproperty-fixedsize: 20px 29px;
 }
 
 #tabwidget-button-closedtabs
@@ -184,7 +189,7 @@ ToolButton[button-id="button-downloads"]
 #tabwidget-button-addtab[outside-tabbar="false"]
 {
     background: #3a3a3b;
-	qproperty-fixedsize: 23px 23px;
+		qproperty-fixedsize: 23px 23px;
     qproperty-themeIcon: "list-add";
 }
 
@@ -193,10 +198,10 @@ ToolButton[button-id="button-downloads"]
     background: #404040;
 }
 
-#tabwidget-button-addtab[outside-tabbar="true"]
+#tabwidget-button-addtab[outside-tabbar="false"]
 {
     qproperty-themeIcon: "list-add";
-    qproperty-fixedsize: 22px 25px;
+    qproperty-fixedsize: 20px 25px;
 }
 
 TabBarTabMetrics
@@ -206,9 +211,12 @@ TabBarTabMetrics
 
 #tabbar
 {background: #3a3a3b;
-    min-height: 25px;
-    max-height: 25px;
-	border: none;
+    min-height: 28px;
+    max-height: 28px;
+	
+   
+	
+		border: none;
 	color: #FFFFFF;
 	
     qproperty-tabPadding: 3;
@@ -216,11 +224,11 @@ TabBarTabMetrics
 }
 /*Кнопки цвет*/
 #tabbarwidget
-{
+{ 
     background: #3a3a3b;
 	color: #FFFFFF;
 	border: none;
-	
+	 
 }
 
 #tab-icon
@@ -243,14 +251,14 @@ TabBarTabMetrics
 }
 
 #tabbar::close-button
-{   
-    image: url(images/tab-close.vg);
+	
+{       image: url(images/tab-close-haSA.svg);
 	
 }
 
 #tabbar::close-button:hover
-{
-    image: url(images/tab-close.svg);
+{	
+	image: url(images/tab-close.svg);
 }
 
 #tabbar::close-button:pressed
@@ -260,15 +268,17 @@ TabBarTabMetrics
 /*Настройки вкладок*/
 #tabbar::tab
 {
-    height: 23px;
+	   height: 23px;
 }
 
 #tabbar::tab:selected
 {
+	
 	font: normal 12px;
     background : #474747;
-      	 
+   
 	border-radius: 5px;
+	
 	 
 	
 	
@@ -285,11 +295,14 @@ TabBarTabMetrics
 }
 
 #tabbar::tab:!selected:hover
+
 {	font: normal 12px;
     background : #424242;
-      	 
-	border-radius: 5px;
+	    	border-radius: 5px 5px 5px 5px;
+	
 }
+	
+	
 
 #tabbar::tab:selected:!first
 {
@@ -343,7 +356,7 @@ IconProvider
 #locationbar
 
 {
-    background: #424242;
+    background: #474747;
 	color: #FFFFFF;
     /*margin-left: 130px;*/
 	
@@ -353,6 +366,7 @@ IconProvider
     qproperty-leftMargin: 35;
 	qproperty-fixedsize: 750px 26px;
 }
+
 
 #locationbar-bookmarkicon
 {
@@ -431,7 +445,7 @@ IconProvider
 
 #websearchbar-searchbutton
 {background: #3a3a3b;
-    qproperty-fixedsize: 22px 16px;
+    qproperty-fixedsize: 20px 16px;
     qproperty-themeIcon: "edit-find";
 }
 
@@ -509,9 +523,9 @@ QFrame[js-frame="true"]
 
 QFrame[js-frame2="true"]
 {
-    border: 1px solid  black;
+    
     border-top: 0px;
-    background-color: #f3f3f3;
+    background-color: #424242;
 }
 
 /*Scrollbar*/
@@ -558,14 +572,21 @@ QScrollBar::up-arrow:vertical:pressed, QScrollBar::down-arrow:vertical:pressed {
     height: 8px;
 	background: #424242;
 }
+QToolTip {
+	background: #161617;
+	/*border-radius: 5px;*/
+	/*border: 2px solid #232729;*/
+	/*padding: 1px;*/
+	color: white;
+	border-radius: 3px;
+	border: 1px solid black;
+  
+}
 /*WebView*/
 WebView {
     background: #424242;
 }
 
-LocationCompleterView {
-	background-color: #787575;
-	border-radius: 5px;
-	border: 2px solid black;
-	color: white;
-}
+
+
+
